@@ -1,0 +1,74 @@
+.header_block{
+    min-height: 55px;
+    background:#000 linear-gradient(-35deg, #0066a1 0%, #003478 40%, #081026 100%) repeat scroll 0 0;filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#081026', endColorstr='#0066a1', GradientType=1);
+        background-color: #2b86b2;
+}
+
+.header_block .col-sm-4{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header_block h2 {    
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 22% auto;
+    height: 45%;
+    width: 65%;
+    display: inline-block;
+    margin: 2% 1.5%;
+    font-size: 18px;
+    color: #fff;
+    font-family: centrale-sans;
+}
+
+.header_block .pageMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_block .pageMenu li {
+    display: inline;
+    line-height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header_block .pageMenu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+    outline: 0;
+}
+
+.header_block .pageMenu li a.active {
+    border-bottom: 5px solid #fff;
+}
+
+.header_block .pageMenu li a:hover {
+    border-bottom: 5px solid #1569c7;
+    color: #fff;
+}
+
+.header_block .navbar {
+    margin-bottom: 0px;
+}
+
+.header_block .navbar .top-nav {
+    list-style: none;
+    margin: 5px 8px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    line-height: 43px;
+    float: right;
+    width: auto;
+}
+
+.header_block .navbar .top-nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+}

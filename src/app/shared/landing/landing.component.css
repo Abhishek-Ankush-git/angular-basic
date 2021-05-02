@@ -1,0 +1,41 @@
+.main_conatiner{    
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+
+.dashboard_container {
+    height: 88%;
+}
+
+.dashboard_left{
+    width: 300px;
+    float: left;
+    /* height: 1000px; */
+    height: 100%;
+    transition: width 200ms;
+}
+
+.dashboard_right{
+    width: calc(100% - 50px);
+    transition: width 200ms;
+    height: calc(100% - 50px);
+}
+
+.dashboard_left.active{
+    width: 50px;
+}
+
+.dashboard_right.active{
+    width: calc(100% - 52px);
+}
+
+.dashboard_grid{
+    padding: 0px;
+}
+
+.dashboard_detail{
+    padding-left: 5px;
+    padding-right: 10px;
+}

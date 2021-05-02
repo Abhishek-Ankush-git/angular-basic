@@ -1,6 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { of } from 'rxjs';
 import { AppComponent } from './app.component';
+import { Logger } from './core/logger.service';
+
+class MockLoggerService {
+  log () {
+    return of(true);
+  }
+}
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -11,6 +19,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [{provide: Logger, userClass: MockLoggerService}]
     }).compileComponents();
   }));
 
@@ -26,10 +35,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('angular-basics');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-basics app is running!');
-  });
 });

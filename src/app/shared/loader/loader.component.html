@@ -1,0 +1,11 @@
+<dls-layout-container id="loader-container" *ngIf="isLoading | async" class="loader-overlay">
+  <div class="text-xs-center">
+    <!-- <i class="fas fa-cog fa-spin fa-3x"></i> <span>{{ message }}</span>  -->
+    <dls-progress-circular-indeterminate id="progress-loader" class="loader"></dls-progress-circular-indeterminate>
+  </div>
+</dls-layout-container>
+
+<!-- <div [hidden]="!isLoading" class="text-xs-center">
+  <i class="fas fa-cog fa-spin fa-3x"></i> <span>{{ message }}</span>
+</div> -->
+  

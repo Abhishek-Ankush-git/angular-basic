@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "coverage": "ng test --code-coverage",
+    "duplicate": "jscpd src --min-tokens=25",
+    "documentation": "compodoc -p src/tsconfig.app.json --disableSourceCode --disableDomTree --disableTemplateTab --disableStyleTab",
+    "documentationminimal": "compodoc -p src/tsconfig.app.json --minimal"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +23,7 @@
     "@angular/platform-browser": "~10.0.4",
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
+    "ng-mocks": "^11.10.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
