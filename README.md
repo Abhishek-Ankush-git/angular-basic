@@ -1,6 +1,6 @@
 # Application Web
 
-This project is to help doing basic setup of Angular Applications for Analystics teams.
+This project is to help doing basic setup of Angular Applications.
 
 ## Functionality of the Application
 
